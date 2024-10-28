@@ -1,4 +1,4 @@
-n=int(input())
-h=(n//60)%24
-m=n%60
+N=int(input())
+h=(N//60)%24
+m=N%60
 print(h,m)

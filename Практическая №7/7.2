@@ -1,0 +1,11 @@
+def f(n):
+    s=sum(n)
+    c=len(n)
+    a=s/c if c>0 else 0
+    for i in range(c):
+        if n[i]==0:
+            n[i]=a
+    return n
+n=[1.0, 0.0, 3.0, 0.0, 5.0]
+b=f(n)
+print(b)

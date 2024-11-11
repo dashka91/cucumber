@@ -1,9 +1,11 @@
-n=100
 def f(n):
-    r=[]
-    for m in range(1,n+1):
-        d=[int(b) for b in str(m)]
-        if all(b!=0 and m%b==0 for b in d):
-            r.append(m)
-    return r
-print(f(n))
+    if len(n)>1:
+        n[0],n[-1]=n[-1],n[0]
+m=int(input("Введите длину массива: "))
+A=[]
+for i in range(m):
+    e=int(input(f"Введите элемент {i + 1}: "))
+    A.append(e)
+print("Исходный массив:",A)
+f(A)
+print("Массив после замены:",A)
